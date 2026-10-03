@@ -46,9 +46,9 @@ body.mo .menu{clip-path:circle(150% at 92% 38px);visibility:visible}body.mo .log
 .par{will-change:transform}
 /* hero */
 .hero{padding:104px 0 64px;overflow:hidden;background:#ffffff}.hero h1{margin:16px 0 18px!important}.hv{position:relative}.hv .fig{position:absolute;inset:0;width:100%;height:100%;border-radius:200px 200px 22px 22px;pointer-events:none}.fl{position:absolute;background:rgba(255,253,252,.92);backdrop-filter:blur(10px);border-radius:16px;padding:12px 18px;font-size:.78rem;font-weight:600;box-shadow:0 18px 40px -14px rgba(59,16,34,.45);animation:fy 6s ease-in-out infinite;z-index:2}.fl b{display:block;font:500 1.15rem var(--sf);color:var(--p)}.fl.a{left:-26px;bottom:18%}.fl.b{right:-14px;top:12%;animation-delay:-3s}@keyframes fy{50%{transform:translateY(-10px)}}.hero .art{box-shadow:0 40px 80px -30px rgba(59,16,34,.55)}.hg{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
-.hero h1 em{font-style:italic;color:var(--p)}.rot{display:inline-block;height:1.5em;overflow:hidden;vertical-align:bottom;color:var(--p);font-weight:600;letter-spacing:.12em;font-size:.82rem}.rot div{animation:rt 8s infinite}.rot b{display:block;height:1.5em}
+.hero h1 em{font-style:italic;color:var(--p)}.rot{display:inline-block;height:1.5em;overflow:hidden;vertical-align:bottom;color:var(--p);font-weight:600;letter-spacing:.12em;font-size:.82rem}.rot div{animation:rt 8s infinite}.rot b{display:block;height:1.5em;padding-right:.3em}
 @keyframes rt{0%,20%{transform:none}25%,45%{transform:translateY(-1.5em)}50%,70%{transform:translateY(-3em)}75%,95%{transform:translateY(-4.5em)}100%{transform:none}}
-.hero .art{aspect-ratio:3/4;border-radius:200px 200px 22px 22px}.hero p.lead{max-width:560px;color:var(--m);font-size:1.1rem}
+.hero .art{aspect-ratio:3/4;border-radius:200px 200px 22px 22px}.hero p.lead{max-width:560px;color:var(--m);font-size:clamp(.95rem,2.2vw,1.1rem);line-height:1.6}
 .row{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0 14px}.tr{font-size:.82rem;color:var(--m)}.tr:before{content:"● ";color:var(--p)}
 /* marquee */
 .mq{overflow:hidden;background:var(--p);color:var(--r);padding:18px 0;font:italic 500 1.3rem var(--sf);white-space:nowrap}.mq div{display:inline-block;animation:mq 30s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
@@ -79,7 +79,7 @@ form{display:grid;gap:18px}label{font-size:.78rem;font-weight:600;letter-spacing
 input,select,textarea{width:100%;padding:15px 18px;border-radius:14px;border:1.5px solid rgba(0,0,0,.18);background:var(--w);font:inherit;color:var(--k)}input.bad,select.bad{border-color:#b3261e}.er{color:#b3261e;font-size:.75rem;min-height:1em}
 .fg2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .ok{position:fixed;inset:0;background:var(--d);color:#fff;z-index:95;display:grid;place-content:center;text-align:center;opacity:0;pointer-events:none;transition:opacity .4s}.ok.on{opacity:1;pointer-events:auto}.ok svg{width:90px;margin:0 auto 20px}.ok path{stroke:var(--r);stroke-width:3;fill:none;stroke-dasharray:60;stroke-dashoffset:60}.ok.on path{animation:dr 1s .2s forwards}@keyframes dr{to{stroke-dashoffset:0}}
-footer{background:var(--d);color:#e9d9de;padding:10px 0 6px}footer .fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:12px}footer h4{font:600 .85rem var(--ss);letter-spacing:.16em;color:var(--r);text-transform:uppercase;margin:0 0 2px}footer a{display:block;text-decoration:none;padding:0;font-size:.9rem;line-height:1.2}footer a:hover{color:#fff}footer .logo{color:#fff;font-size:1.4rem}footer p{margin:0 0 2px;font-size:.9rem;line-height:1.2}.dis{border-top:1px solid rgba(255,255,255,.15);margin-top:8px;padding-top:6px;font-size:.85rem;line-height:1.2;color:#bfa9b1}
+footer{background:var(--d);color:#e9d9de;padding:28px 0 16px}footer .fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:24px}footer h4{font:600 .8rem var(--ss);letter-spacing:.16em;color:var(--r);text-transform:uppercase;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid rgba(233,200,209,.15)}footer a{display:block;text-decoration:none;padding:4px 0;font-size:.88rem;line-height:1.4;transition:color .25s,padding-left .25s}footer a:hover{color:#fff;padding-left:4px}footer .logo{color:#fff;font-size:1.4rem}footer p{margin:0;font-size:.88rem;line-height:1.4}.dis{border-top:1px solid rgba(255,255,255,.12);margin-top:20px;padding-top:12px;font-size:.78rem;line-height:1.5;color:#bfa9b1;text-align:center}
 .sl{position:fixed;left:18px;top:25vh;height:50vh;width:2px;background:rgba(106,23,56,.15);z-index:20}.sl i{display:block;width:100%;height:0;background:var(--p)}.sl span{position:absolute;top:-26px;left:-4px;font:600 .62rem var(--ss);letter-spacing:.14em;color:var(--p);white-space:nowrap}
 @media(max-width:1100px){.g4{grid-template-columns:1fr 1fr}.g5{grid-template-columns:1fr 1fr}.links{display:none}.burger{display:block}.sl{display:none}.g3{grid-template-columns:1fr 1fr}footer .fg{grid-template-columns:1fr 1fr}}
 @media(max-width:860px){.links{display:none}.burger{display:block}.hg,.as,.sv,.g2,.g3{grid-template-columns:1fr}footer .fg{grid-template-columns:1fr 1fr;gap:20px 10px}.hero .art{aspect-ratio:4/5;max-height:54vh}.hv{order:-1}.fl.a{left:8px}.fl.b{right:8px}.hero{padding-top:84px}.sv .art{position:relative;top:0}.fg2{grid-template-columns:1fr}.cat{min-height:380px}.sv{gap:30px;padding:36px 0}}
@@ -110,12 +110,29 @@ section[data-n]:after{content:attr(data-n);position:absolute;right:clamp(20px,4v
 <div class="menu" id="menu" aria-hidden="true"><div id="mlinks"></div><div><div class="cats">Relationships · Intimacy · Wellness · Boundaries</div><p style="font:italic 1.5rem var(--sf);color:var(--r);margin:0">Stop Guessing. Start Strategizing.</p></div></div>
 <div class="sl" id="sl" hidden><span id="sln">01</span><i id="slf"></i></div>
 <main id="pg"></main>
-<footer><div class="wrap"><div class="fg"><div><a class="logo" href="#/"><img src="logo.png" alt="Spouzy" style="max-height: 25px; filter: brightness(0) invert(1);"></a><p style="font:italic 1.15rem var(--sf);margin-top:0">Stop Guessing. Start Strategizing.</p><p style="font-size:.9rem;color:#bfa9b1">Real strategies for relationships, intimacy, wellness and personal boundaries.</p>
-<p><a href="#" onclick="return false">Instagram</a><a href="#" onclick="return false">LinkedIn</a><a href="#" onclick="return false">YouTube</a></p></div>
-<div><h4>Explore</h4><a href="#/">Home</a><a href="#/about">About</a><a href="#/services">Services</a><a href="#/categories/relationships">Relationships</a><a href="#/categories/intimacy">Intimacy</a><a href="#/categories/wellness">Wellness</a><a href="#/categories/sexual-harassment">Sexual Harassment</a><a href="#/resources">Resources</a><a href="#/contact">Contact</a></div>
-<div><h4>Services</h4><a href="#/services">Consultation</a><a href="#/services">Coaching</a><a href="#/services">Training</a><a href="#/services">Treatment</a><a href="#/services">Counselling</a></div>
-<div><h4>Contact</h4><a href="#/contact">WhatsApp</a><a href="#/contact">hello@your-domain.com</a><a href="#/contact">Your city, Country</a></div></div>
-<div class="dis">Spouzy provides educational information and connects users with appropriate professional resources. Educational content is not a substitute for individual medical, psychological or legal advice.<br>© 2026 Spouzy. All rights reserved.</div></div></footer>
+<footer><div class="wrap">
+<div class="fg">
+<div>
+<a class="logo" href="#/"><img src="logo.png" alt="Spouzy" style="max-height:30px;filter:brightness(0) invert(1)"></a>
+<p style="font:italic 1.1rem var(--sf);margin:8px 0 4px">Stop Guessing. Start Strategizing.</p>
+<p style="font-size:.88rem;color:#bfa9b1;line-height:1.5;max-width:280px">Real strategies for relationships, intimacy, wellness and personal boundaries.</p>
+<div style="display:flex;gap:14px;margin-top:10px"><a href="#" onclick="return false" style="font-size:.88rem">Instagram</a><a href="#" onclick="return false" style="font-size:.88rem">LinkedIn</a><a href="#" onclick="return false" style="font-size:.88rem">YouTube</a></div>
+</div>
+<div>
+<h4>Explore</h4>
+<a href="#/">Home</a><a href="#/about">About</a><a href="#/services">Services</a><a href="#/categories/relationships">Relationships</a><a href="#/categories/intimacy">Intimacy</a><a href="#/categories/wellness">Wellness</a><a href="#/categories/sexual-harassment">Sexual Harassment</a><a href="#/resources">Resources</a><a href="#/contact">Contact</a>
+</div>
+<div>
+<h4>Services</h4>
+<a href="#/services">Consultation</a><a href="#/services">Coaching</a><a href="#/services">Training</a><a href="#/services">Treatment</a><a href="#/services">Counselling</a>
+</div>
+<div>
+<h4>Contact</h4>
+<a href="#/contact">WhatsApp</a><a href="#/contact">hello@your-domain.com</a><a href="#/contact">Your city, Country</a>
+</div>
+</div>
+<div class="dis">Spouzy provides educational information and connects users with appropriate professional resources. Educational content is not a substitute for individual medical, psychological or legal advice.<br>© 2026 Spouzy. All rights reserved.</div>
+</div></footer>
 <div class="ok" id="ok" role="status"><div><svg viewBox="0 0 60 60"><path d="M12 31l12 12 24-26"/></svg><h2>Opening WhatsApp…</h2><p style="color:var(--r)">Your request is ready to send.</p></div></div>
 <script>
 const WA_NUMBER='YOUR_WHATSAPP_NUMBER'; // set your number, digits only with country code
@@ -137,8 +154,8 @@ const cta=()=>`<section class="rose" data-n="05 SUPPORT" style="overflow:hidden;
 const hero=(lb,h,p,i,r='')=>`<section class="pagehero" data-n="${r||'01 RELATIONSHIPS'}"><div class="wrap g2" style="align-items:center"><div><div class="lb">${lb}</div><h1 style="font-size:clamp(1.9rem,4.2vw,3.2rem);margin-top:16px">${sp(h)}</h1><p class="rv">${p}</p></div>${art(i,60,30,30,'mk par')}</div></section>`;
 const topics=(id,o)=>`<div class="sv" id="${id}" style="grid-template-columns:.8fr 1.2fr"><div><div class="lb">${o.k}</div><h2 style="margin:12px 0 14px">${o.t}</h2><p style="color:var(--m)">${o.d}</p></div><div><ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px;margin:0">${o.l.map(x=>`<li class="pill" style="font-size:.85rem;padding:9px 18px">${x}</li>`).join('')}</ul></div></div>`;
 const R={};
-R['/']=()=>`<section class="hero" data-n="01 RELATIONSHIPS"><div class="wrap hg"><div><div class="lb" style="animation:fi 1s .3s both">RELATIONSHIPS • INTIMACY • WELLNESS • RIGHTS</div><h1 style="margin:22px 0">${sp('Stop Guessing.|<em>Start Strategizing.</em>',.5)}</h1>
-<p style="margin-bottom:6px;animation:fi 1s 1.1s both"><span class="rot" aria-hidden="true"><div><b>RELATIONSHIPS</b><b>INTIMACY</b><b>WELLNESS</b><b>BOUNDARIES</b></div></span> <span style="font-size:.95rem;color:var(--m)">We help you navigate what comes next.</span></p>
+R['/']=()=>`<section class="hero" data-n="01 RELATIONSHIPS"><div class="wrap hg"><div><div class="lb" style="animation:fi 1s .3s both">RELATIONSHIPS &nbsp;·&nbsp; INTIMACY &nbsp;·&nbsp; WELLNESS &nbsp;·&nbsp; BOUNDARIES</div><h1 style="margin:22px 0">${sp('Stop Guessing.|<em>Start Strategizing.</em>',.5)}</h1>
+<p style="margin-bottom:10px;animation:fi 1s 1.1s both"><span class="rot" aria-hidden="true"><div><b>RELATIONSHIPS</b><b>INTIMACY</b><b>WELLNESS</b><b>BOUNDARIES</b></div></span> <span style="font-size:1.05rem;color:var(--m);display:inline-block;margin-top:4px">We help you navigate what comes next.</span></p>
 <p class="lead" style="animation:fi 1s 1.2s both">Navigating a relationship, improving intimacy, protecting your boundaries or understanding your rights requires more than advice. Spouzy gives you practical strategies, expert-backed education and the right support to help you move forward.</p>
 <div class="row" style="animation:fi 1s 1.4s both">${btn('Find Your First Step','#/contact')}${btn('Explore Spouzy','#/about','o')}</div><div class="tr" style="animation:fi 1s 1.6s both">No-Cost Consultation Available</div></div><div class="hv">${art(0,65,25,28,'mk par')}<svg class="fig" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><circle cx="215" cy="105" r="48" fill="rgba(255,255,255,.22)"/><circle cx="215" cy="105" r="70" fill="none" stroke="rgba(255,255,255,.2)"/><circle cx="118" cy="215" r="26" fill="#F8F4EF" opacity=".92"/><path d="M70 400v-110q0-48 48-48t48 48v110z" fill="#F8F4EF" opacity=".92"/><circle cx="188" cy="200" r="28" fill="#E9C8D1" opacity=".95"/><path d="M135 400v-100q0-52 53-52t53 52v100z" fill="#E9C8D1" opacity=".95"/></svg><span class="fl a"><b>No-Cost</b>Consultation available</span><span class="fl b"><b>Private · Respectful</b>Judgment-free</span></div></div></section>
 <div class="mq" aria-hidden="true"><div>${'Relationship strategy · Intimacy education · Personal wellness · Boundaries &amp; rights · Coaching · Counselling · '.repeat(6)}</div></div>
